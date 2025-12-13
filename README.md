@@ -64,7 +64,7 @@ All required libraries are part of Python's standard library:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/NotAnyOneMe/proxy-checker-pro.git
-cd proxy-checker-pro
+cd ProxyChecker
 ```
 
 ### 2. Verify Python Installation
