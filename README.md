@@ -63,7 +63,7 @@ All required libraries are part of Python's standard library:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/NotAnyOneMe/proxy-checker-pro.git
+git clone https://github.com/NotAnyoneMe/ProxyChecker.git
 cd ProxyChecker
 ```
 
@@ -76,9 +76,9 @@ python3 --version
 
 ### 3. Run the Application
 ```bash
-python proxy_checker_pro.py
+python app.py
 # or
-python3 proxy_checker_pro.py
+python3 app.py
 ```
 
 **Note**: No additional dependencies need to be installed. All required libraries are included with Python's standard library.
