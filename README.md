@@ -1,4 +1,4 @@
-# 🔐 Proxy Checker Pro
+# 🔐 Proxy Checker
 
 ![Version](https://img.shields.io/badge/version-3.0-brightgreen)
 ![Python](https://img.shields.io/badge/python-3.6+-blue)
@@ -7,8 +7,9 @@
 
 A professional, feature-rich proxy checker application with a modern dark-themed GUI. Test HTTP, HTTPS, SOCKS4, and SOCKS5 proxies with real-time speed testing, country detection, and advanced verification methods.
 
-![Proxy Checker Pro Interface](<img width="1280" height="772" alt="image" src="https://github.com/user-attachments/assets/b62d8a1d-5c1b-4d1d-88c5-bf73edf4042b" />
-)
+![Proxy Checker Interface]
+<img width="1280" height="772" alt="image" src="https://github.com/user-attachments/assets/e718c157-9df5-4de2-a085-128f6b0d7f9e" />
+
 
 ## ✨ Features
 
