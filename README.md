@@ -1,4 +1,4 @@
-# 🔐 Proxy Checker
+# Proxy Checker Pro
 
 ![Version](https://img.shields.io/badge/version-3.0-brightgreen)
 ![Python](https://img.shields.io/badge/python-3.6+-blue)
@@ -7,38 +7,38 @@
 
 A professional, feature-rich proxy checker application with a modern dark-themed GUI. Test HTTP, HTTPS, SOCKS4, and SOCKS5 proxies with real-time speed testing, country detection, and advanced verification methods.
 
-![Proxy Checker Pro Interface]<img width="1280" height="772" alt="image" src="https://github.com/user-attachments/assets/dcb0edd9-9033-4683-929d-3186965f7cf9" />
+<img width="1280" alt="Proxy Checker Pro Interface" src="https://github.com/user-attachments/assets/dcb0edd9-9033-4683-929d-3186965f7cf9" />
 
-
-## ✨ Features
+## Features
 
 ### Core Functionality
-- 🌐 **Multiple Proxy Types**: HTTP, HTTPS, SOCKS4, SOCKS5
-- 📋 **Flexible Input Formats**: 
+- **Multiple Proxy Types**: HTTP, HTTPS, SOCKS4, SOCKS5
+- **Flexible Input Formats**: 
   - `IP:PORT`
   - `IP:PORT:USER:PASS`
   - `USER:PASS:IP:PORT`
   - `IP PORT`
   - `HOST:PORT`
-- 🔐 **Authentication Support**: Full support for proxies with username/password
-- ⚡ **Real-time Testing**: HTTP request verification with custom test URLs
-- 🚀 **Speed Testing**: Measure proxy download speed in KB/s
-- 🌍 **Country Detection**: Automatic IP geolocation
-- 🔄 **Duplicate Removal**: Automatically filter duplicate proxies
+- **Authentication Support**: Full support for proxies with username/password
+- **Real-time Testing**: HTTP request verification with custom test URLs
+- **Speed Testing**: Measure proxy download speed in KB/s
+- **Country Detection**: Automatic IP geolocation via API
+- **Duplicate Removal**: Automatically filter duplicate proxies
 
 ### Advanced Features
-- 🎯 **Verification Methods**: 
+- **Verification Methods**: 
   - HTTP Request (full functionality test)
   - Socket Connection (basic connectivity test)
-- 📊 **Sorting Options**: Sort by IP, Port, Country, Speed, or Status
-- 💾 **Export Options**: Save results as CSV or TXT
-- ⚙️ **Customizable Settings**: 
-  - Adjustable timeout
+- **Sorting Options**: Sort by IP, Port, Country, Speed, or Status
+- **Export Options**: Save results as CSV or TXT
+- **Customizable Settings**: 
+  - Adjustable timeout values
   - Custom test URLs
-  - Configurable thread count
-- 🎨 **Modern Dark Theme**: Professional, eye-friendly interface
+  - Configurable verification methods
+  - Speed check toggle
+- **Modern Dark Theme**: Professional, eye-friendly interface with color-coded status
 
-## 📋 Requirements
+## Requirements
 
 ### Python Version
 - Python 3.6 or higher
@@ -55,26 +55,29 @@ All required libraries are part of Python's standard library:
 - `json` - API response parsing
 
 ### System Requirements
-- **OS**: Windows, Linux, or macOS
-- **RAM**: 512 MB minimum
+- **Operating System**: Windows, Linux, or macOS
+- **Memory**: 512 MB minimum
 - **Display**: 1200x700 minimum resolution recommended
+- **Internet Connection**: Required for country detection and proxy testing
 
-## 🚀 Installation
+## Installation
 
-### 1. Clone the Repository
+### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/NotAnyoneMe/ProxyChecker.git
 cd ProxyChecker
 ```
 
-### 2. Verify Python Installation
+### Step 2: Verify Python Installation
 ```bash
 python --version
 # or
 python3 --version
 ```
 
-### 3. Run the Application
+Ensure you have Python 3.6 or higher installed.
+
+### Step 3: Run the Application
 ```bash
 python app.py
 # or
@@ -83,145 +86,220 @@ python3 app.py
 
 **Note**: No additional dependencies need to be installed. All required libraries are included with Python's standard library.
 
-## 📖 Usage Guide
+## Usage Guide
 
 ### Basic Workflow
 
-1. **Load Proxies**
-   - Click "Load Proxies" button
+**1. Load Proxies**
+   - Click "Load Proxies" button in the Checker tab
    - Select your proxy list file (.txt format)
-   - Choose appropriate input format from dropdown
+   - Choose the appropriate input format from the dropdown menu
+   - Enable "Remove Duplicates" if needed
 
-2. **Configure Settings**
-   - Select proxy type (HTTP/HTTPS/SOCKS4/SOCKS5)
-   - Set timeout value (default: 10 seconds)
-   - Enable/disable speed checking
-   - Choose verification method
+**2. Configure Settings**
+   - Select proxy type: HTTP, HTTPS, SOCKS4, or SOCKS5
+   - Set timeout value in seconds (default: 10)
+   - Enable/disable "Check Speed" option
+   - Choose output format for exports
+   - Select sorting preference
 
-3. **Start Checking**
-   - Click "Start Check" to begin
-   - Monitor real-time progress
-   - Use "Stop Check" to halt if needed
+**3. Start Checking**
+   - Click "Start Check" to begin verification
+   - Monitor real-time progress in the status bar
+   - View results in the table with color-coded status:
+     - Green = Working proxy
+     - Red = Failed proxy
+   - Use "Stop Check" to halt the process if needed
 
-4. **Export Results**
-   - Click "Save as CSV" for detailed reports
-   - Click "Save as TXT" for working proxies list
+**4. Export Results**
+   - Click "Save as CSV" for detailed reports with all columns
+   - Click "Save as TXT" for a simple list of working proxies only
 
 ### Input File Format
 
-Create a text file with your proxies, one per line:
+Create a text file with your proxies, one per line. The application supports multiple formats:
 
 ```text
 192.168.1.1:8080
 10.0.0.1:3128:username:password
 username:password:proxy.example.com:8080
+203.0.113.5 8080
 ```
 
-### Configuration Options
+### Settings Configuration
 
-#### Settings Tab
-- **Test URL**: Website to verify proxy connectivity (default: google.com)
-- **Speed Test URL**: File to download for speed testing
-- **Default Timeout**: Maximum wait time per proxy
-- **Concurrent Checks**: Number of simultaneous checks (not implemented in current version)
-- **Verification Method**: Choose between HTTP request or socket connection
+Navigate to the **Settings** tab to customize:
 
-## 🎯 Use Cases
+- **Test URL**: Website used to verify proxy connectivity (default: https://www.google.com)
+- **Speed Test URL**: File URL for download speed measurement (default: 100KB test file)
+- **Default Timeout**: Maximum wait time per proxy in seconds
+- **Concurrent Checks**: Thread count for parallel checking (display only in current version)
+- **Verification Method**: 
+  - HTTP Request: Full functionality test with actual web request
+  - Socket Connection: Basic port connectivity test
 
-- **Web Scraping**: Find reliable proxies for data collection
-- **Privacy Testing**: Test proxy anonymity and speed
-- **Proxy Management**: Maintain and validate proxy lists
-- **Network Administration**: Verify proxy server functionality
-- **Security Research**: Test proxy configurations
+## Use Cases
 
-## 🛠️ Advanced Configuration
+- **Web Scraping**: Find and validate reliable proxies for data collection projects
+- **Privacy Testing**: Test proxy anonymity levels and connection speeds
+- **Proxy Management**: Maintain and validate large proxy lists efficiently
+- **Network Administration**: Verify proxy server functionality and performance
+- **Security Research**: Test proxy configurations and security settings
+- **Bot Development**: Source working proxies for automation tasks
+
+## Advanced Configuration
 
 ### Custom Test URLs
-You can specify custom URLs to test specific websites or services:
-- Social media platforms
-- E-commerce sites
+
+You can specify custom URLs in the Settings tab to test proxies against specific websites or services:
+- Social media platforms (Twitter, Facebook, Instagram)
+- E-commerce sites (Amazon, eBay)
 - API endpoints
-- Geo-restricted content
+- Geo-restricted content services
+- Corporate intranets
 
 ### Speed Test Customization
-Modify the speed test URL to test with different file sizes:
-- Small files (100KB) for quick checks
-- Large files (10MB+) for accurate speed measurement
 
-## 📊 Output Formats
+Modify the speed test URL to use different file sizes based on your needs:
+- **Small files (100KB)**: Quick speed checks, suitable for large proxy lists
+- **Medium files (1-5MB)**: Balanced testing for moderate accuracy
+- **Large files (10MB+)**: Accurate speed measurement, takes longer per proxy
 
-### CSV Export
-Includes all details:
-- IP Address
-- Port
-- Proxy Type
-- Country
-- Speed (KB/s)
-- Response Time
-- Status
+### Output Format Options
 
-### TXT Export
-Simple format with working proxies only:
+Choose from multiple output formats:
+- **IP:PORT** - Standard format
+- **IP PORT** - Space-separated
+- **IP,PORT** - Comma-separated (CSV compatible)
+
+## Output Details
+
+### CSV Export Format
+
+The CSV export includes comprehensive information:
+
+| Column | Description |
+|--------|-------------|
+| IP | IP address of the proxy (with auth username if applicable) |
+| Port | Port number |
+| Type | Proxy type (HTTP/HTTPS/SOCKS4/SOCKS5) |
+| Country | Detected country via geolocation |
+| Speed (KB/s) | Download speed measurement |
+| Response Time | Time to establish connection |
+| Status | Working or Failed with error details |
+
+### TXT Export Format
+
+Simple text file containing only working proxies in the selected output format:
 ```text
-IP:PORT
-IP:PORT
-...
+192.168.1.1:8080
+10.0.0.1:3128
+203.0.113.5:8080
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
-### Common Issues
+### Common Issues and Solutions
 
-**Issue**: Proxies showing as "Failed" even though they work
-- **Solution**: Increase timeout value in settings
-- **Solution**: Try different verification method
+**Issue**: Proxies showing as "Failed" even though they are known to work
+- **Solution 1**: Increase timeout value in settings (try 15-30 seconds)
+- **Solution 2**: Switch verification method from HTTP Request to Socket Connection
+- **Solution 3**: Check if the test URL is accessible from your location
+- **Solution 4**: Some proxies may require specific authentication formats
 
-**Issue**: Country shows as "Unknown"
-- **Solution**: Check internet connection (uses ip-api.com)
-- **Solution**: Some IPs may not be in geolocation database
+**Issue**: Country shows as "Unknown" for all proxies
+- **Solution 1**: Verify your internet connection is active
+- **Solution 2**: Check if ip-api.com is accessible from your network
+- **Solution 3**: Some private IP addresses won't have geolocation data
+- **Solution 4**: API rate limiting may occur with very large proxy lists
 
-**Issue**: Speed test shows "N/A"
-- **Solution**: Ensure speed test URL is accessible
-- **Solution**: Proxy may be too slow (increase timeout)
+**Issue**: Speed test shows "N/A" for all proxies
+- **Solution 1**: Ensure the speed test URL is accessible and returns data
+- **Solution 2**: Increase timeout value as slow proxies may timeout
+- **Solution 3**: Disable speed checking if not needed to speed up verification
+- **Solution 4**: Some proxies block file downloads
 
-**Issue**: Application not starting
-- **Solution**: Verify Python 3.6+ is installed
-- **Solution**: Check tkinter is available: `python -m tkinter`
+**Issue**: Application window not displaying correctly
+- **Solution 1**: Verify minimum screen resolution (1200x700)
+- **Solution 2**: Check display scaling settings in your OS
+- **Solution 3**: Try maximizing the window
 
-## 🤝 Contributing
+**Issue**: Application not starting or crashes on launch
+- **Solution 1**: Verify Python 3.6+ is installed: `python --version`
+- **Solution 2**: Check tkinter availability: `python -m tkinter`
+- **Solution 3**: On Linux, install tkinter: `sudo apt-get install python3-tk`
+- **Solution 4**: Check console for error messages
 
-Contributions are welcome! Here's how you can help:
+**Issue**: Checking process is very slow
+- **Solution 1**: Reduce timeout value for faster checking
+- **Solution 2**: Disable speed checking if not needed
+- **Solution 3**: Use Socket Connection method instead of HTTP Request
+- **Solution 4**: Check proxy list for invalid entries
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Contributing
+
+Contributions are welcome and appreciated! Here's how you can help improve Proxy Checker Pro:
+
+### How to Contribute
+
+1. **Fork the repository** on GitHub
+2. **Clone your fork** locally: `git clone https://github.com/YOUR-USERNAME/ProxyChecker.git`
+3. **Create a feature branch**: `git checkout -b feature/AmazingFeature`
+4. **Make your changes** and test thoroughly
+5. **Commit your changes**: `git commit -m 'Add some AmazingFeature'`
+6. **Push to your branch**: `git push origin feature/AmazingFeature`
+7. **Open a Pull Request** with a clear description of changes
 
 ### Areas for Contribution
-- Additional proxy types support
-- Enhanced speed testing algorithms
-- Improved country detection
-- GUI translations
-- Performance optimizations
-- Bug fixes and improvements
 
-## 📝 License
+- **Additional proxy types**: SOCKS4A support, HTTP/2 proxies
+- **Enhanced speed testing**: More accurate algorithms, multiple test files
+- **Improved country detection**: Alternative APIs, local database support
+- **GUI improvements**: Themes, translations, accessibility features
+- **Performance optimizations**: Multi-threading implementation, memory efficiency
+- **Export formats**: JSON, XML, database export options
+- **Proxy chain support**: Test multiple proxy hops
+- **Scheduling**: Automated periodic checking
+- **Statistics**: Charts and graphs for results analysis
+- **Bug fixes**: Report and fix issues
+- **Documentation**: Improve guides and examples
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Code Style Guidelines
 
-## 👨‍💻 Developer
+- Follow PEP 8 style guidelines
+- Add comments for complex logic
+- Update documentation for new features
+- Test changes before submitting
+- Keep commits focused and atomic
 
-**Developed by @MLBOR**
+## License
 
-- 📱 Telegram: [@MLBOR](https://t.me/MLBOR)
-- 💻 GitHub: [github.com/NotAnyOneMe](https://github.com/NotAnyOneMe)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for full details.
 
-## 💰 Support Development
+### MIT License Summary
 
-If you find this tool useful, consider supporting its development:
+You are free to:
+- Use the software for any purpose
+- Modify the source code
+- Distribute copies
+- Use the software commercially
 
-### Cryptocurrency Donations
+The software is provided "as is", without warranty of any kind.
+
+## Developer
+
+**Developed by MLBOR**
+
+- **Telegram**: [@MLBOR](https://t.me/MLBOR)
+- **GitHub**: [github.com/NotAnyOneMe](https://github.com/NotAnyOneMe)
+
+For questions, suggestions, or support, feel free to reach out via Telegram or GitHub.
+
+## Support Development
+
+If you find this tool useful and would like to support its continued development, cryptocurrency donations are greatly appreciated:
+
+### Cryptocurrency Addresses
 
 **TON (The Open Network)**
 ```
@@ -243,36 +321,52 @@ bc1q6y0qx6xhla2w9utlqusyzpskn0mdvfgzwchg50
 0xe3C42C6AF102fFDf6856DC2df3Ec7D009F4Eb31B
 ```
 
-Your support helps keep this project alive! 🚀
+Your support helps maintain and improve this project. Thank you!
 
-## ⭐ Star History
+## Star This Repository
 
-If you find this project useful, please consider giving it a star! It helps others discover the tool.
+If you find Proxy Checker Pro useful, please consider giving it a star on GitHub. It helps others discover the tool and motivates continued development.
 
-## 📞 Contact & Support
+## Contact & Support
 
-- **Issues**: Report bugs via [GitHub Issues](https://github.com/NotAnyOneMe/proxy-checker-pro/issues)
-- **Telegram**: Direct support via [@MLBOR](https://t.me/MLBOR)
-- **Discussions**: Join conversations in GitHub Discussions
+- **Bug Reports**: Submit via [GitHub Issues](https://github.com/NotAnyoneMe/ProxyChecker/issues)
+- **Feature Requests**: Open an issue with the "enhancement" label
+- **Direct Support**: Contact via Telegram [@MLBOR](https://t.me/MLBOR)
+- **Discussions**: Join conversations in [GitHub Discussions](https://github.com/NotAnyoneMe/ProxyChecker/discussions)
 
-## 🔄 Changelog
+## Changelog
 
-### Version 3.0 - Ultimate Edition
-- ✅ Multiple proxy type support
-- ✅ Authentication support
-- ✅ Speed testing feature
-- ✅ Country detection
-- ✅ Modern dark theme GUI
-- ✅ Multiple input/output formats
-- ✅ Real-time checking
-- ✅ Export to CSV/TXT
+### Version 3.0 - Ultimate Edition (Current)
+- Multiple proxy type support (HTTP, HTTPS, SOCKS4, SOCKS5)
+- Authentication support with flexible input formats
+- Real-time speed testing with configurable URLs
+- Automatic country detection via geolocation API
+- Modern dark theme with professional styling
+- Multiple input and output format options
+- Color-coded status indicators (green/red)
+- Real-time progress tracking
+- Dual verification methods (HTTP/Socket)
+- Export to CSV and TXT formats
+- Sorting by multiple criteria
+- Duplicate removal functionality
+
+### Future Roadmap
+- Multi-threading for faster checking
+- Proxy chain testing
+- Export to additional formats (JSON, XML)
+- Statistics and analytics dashboard
+- Scheduled checking
+- Proxy rotation testing
+- Advanced filtering options
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by @MLBOR**
+**Made with care by MLBOR**
 
-⭐ **Don't forget to star this repo if you find it useful!** ⭐
+**Give this project a star if you find it useful!**
+
+[Report Bug](https://github.com/NotAnyoneMe/ProxyChecker/issues) · [Request Feature](https://github.com/NotAnyoneMe/ProxyChecker/issues) · [Contribute](https://github.com/NotAnyoneMe/ProxyChecker/pulls)
 
 </div>
